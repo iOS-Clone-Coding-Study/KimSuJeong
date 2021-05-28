@@ -14,18 +14,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // NavigationBar Blur Effect
-        //        let appearance = UINavigationBarAppearance()
-        //        appearance.configureWithDefaultBackground()
-        //        appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
-        //
-        //        let scrollingAppearance = UINavigationBarAppearance()
-        //        scrollingAppearance.configureWithDefaultBackground()
-        //        scrollingAppearance.backgroundColor = .white
-        //
-        //        UINavigationBar.appearance().standardAppearance = appearance
-        //        UINavigationBar.appearance().scrollEdgeAppearance = scrollingAppearance
-        //        UINavigationBar.appearance().compactAppearance = scrollingAppearance
+        //MARK: NavigationBar Blur Effect
+        //let appearance = UINavigationBarAppearance()
+        //appearance.configureWithDefaultBackground()
+        //appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
+        
+        //let scrollingAppearance = UINavigationBarAppearance()
+        //scrollingAppearance.configureWithDefaultBackground()
+        //scrollingAppearance.backgroundColor = .white
+       
+        //UINavigationBar.appearance().standardAppearance = appearance
+        //UINavigationBar.appearance().scrollEdgeAppearance = scrollingAppearance
+        //UINavigationBar.appearance().compactAppearance = scrollingAppearance
+        
+        //MARK: TabBar Blur Effect
+        //let tabappearance = UITabBarAppearance()
+        //tabappearance.configureWithDefaultBackground()
+        //tabappearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterialLight)
+        
+        //UITabBar.appearance().standardAppearance = tabappearance
         
         return true
     }

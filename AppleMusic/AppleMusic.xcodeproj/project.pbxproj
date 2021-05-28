@@ -55,6 +55,7 @@
 		DD81F344264A8DE7007DDFB0 /* FourthRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81F343264A8DE7007DDFB0 /* FourthRec.swift */; };
 		DD81F346264A8EF1007DDFB0 /* FifthRec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81F345264A8EF1007DDFB0 /* FifthRec.swift */; };
 		DD81F349264A90F0007DDFB0 /* FirstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81F348264A90F0007DDFB0 /* FirstData.swift */; };
+		DDBA271A266112F300AA7800 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBA2719266112F300AA7800 /* testViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,7 @@
 		DD81F343264A8DE7007DDFB0 /* FourthRec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthRec.swift; sourceTree = "<group>"; };
 		DD81F345264A8EF1007DDFB0 /* FifthRec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthRec.swift; sourceTree = "<group>"; };
 		DD81F348264A90F0007DDFB0 /* FirstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstData.swift; sourceTree = "<group>"; };
+		DDBA2719266112F300AA7800 /* testViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				DD81F30026493327007DDFB0 /* AppleMusicVC.swift */,
+				DDBA2719266112F300AA7800 /* testViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				DD24B0E1264C234200A847BF /* FifthData.swift in Sources */,
 				DD24B0FC265BB6FD00A847BF /* FifthCVCell.swift in Sources */,
 				DD81F32C264A1197007DDFB0 /* FirstRecCVCell.swift in Sources */,
+				DDBA271A266112F300AA7800 /* testViewController.swift in Sources */,
 				DD81F32126498D22007DDFB0 /* FavSongTVCell.swift in Sources */,
 				DD81F307264935FE007DDFB0 /* UIVIew+Extension.swift in Sources */,
 				DD24B0DD264C229200A847BF /* ThirdData.swift in Sources */,

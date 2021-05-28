@@ -100,22 +100,10 @@
             <objects>
                 <viewController storyboardIdentifier="testViewController" id="ed6-xD-Cfv" customClass="testViewController" customModule="AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UTr-uJ-oqj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k5y-Pz-mwO">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Y2r-oX-HNZ"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
-                        <constraints>
-                            <constraint firstItem="k5y-Pz-mwO" firstAttribute="leading" secondItem="Y2r-oX-HNZ" secondAttribute="leading" id="OOo-Ur-i2Z"/>
-                            <constraint firstItem="Y2r-oX-HNZ" firstAttribute="trailing" secondItem="k5y-Pz-mwO" secondAttribute="trailing" id="fVE-YG-NM2"/>
-                            <constraint firstItem="k5y-Pz-mwO" firstAttribute="top" secondItem="Y2r-oX-HNZ" secondAttribute="top" id="g3Q-YI-F2L"/>
-                            <constraint firstItem="Y2r-oX-HNZ" firstAttribute="bottom" secondItem="k5y-Pz-mwO" secondAttribute="bottom" id="usA-0Q-mQn"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="d5I-6c-gYY"/>
                 </viewController>
@@ -127,7 +115,7 @@
         <scene sceneID="bap-bK-oIM">
             <objects>
                 <navigationController id="9kh-ZV-cpm" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q8e-5U-I1q">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="Q8e-5U-I1q">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -147,7 +135,7 @@
             <objects>
                 <tabBarController id="rz2-Uw-9sC" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="n8S-Ug-Wyi"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qb6-a8-bjP">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="qb6-a8-bjP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
