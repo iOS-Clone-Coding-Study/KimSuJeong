@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavSongTVCell" rowHeight="203" id="KGk-i7-Jjw" customClass="FavSongTVCell" customModule="AppleMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="203"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHz-Ih-spv">
+                        <rect key="frame" x="20" y="0.0" width="339" height="0.5"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="CT4-bi-7vd"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg0-aV-Azq">
+                        <rect key="frame" x="299" y="9" width="60" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="전체 보기">
+                            <color key="titleColor" systemColor="systemPinkColor"/>
+                        </state>
+                    </button>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1Gg-cC-dmn">
+                        <rect key="frame" x="0.0" y="51" width="379" height="132"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UEE-nP-10h">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복을 주는 히트곡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imr-cx-Poi">
+                        <rect key="frame" x="20" y="13" width="126" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jg0-aV-Azq" firstAttribute="centerY" secondItem="imr-cx-Poi" secondAttribute="centerY" id="3tp-OU-MDr"/>
+                    <constraint firstAttribute="bottom" secondItem="1Gg-cC-dmn" secondAttribute="bottom" constant="20" id="7X7-yV-XPS"/>
+                    <constraint firstItem="jg0-aV-Azq" firstAttribute="top" secondItem="fHz-Ih-spv" secondAttribute="bottom" constant="8.5" id="O2Z-9e-yN8"/>
+                    <constraint firstAttribute="trailing" secondItem="fHz-Ih-spv" secondAttribute="trailing" constant="20" id="TBf-sU-fEK"/>
+                    <constraint firstItem="fHz-Ih-spv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UFt-6Q-ghi"/>
+                    <constraint firstAttribute="trailing" secondItem="1Gg-cC-dmn" secondAttribute="trailing" id="a4R-9u-xHA"/>
+                    <constraint firstItem="imr-cx-Poi" firstAttribute="leading" secondItem="fHz-Ih-spv" secondAttribute="leading" id="fQc-bR-uRA"/>
+                    <constraint firstItem="fHz-Ih-spv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hja-Sh-Rqe"/>
+                    <constraint firstItem="jg0-aV-Azq" firstAttribute="trailing" secondItem="fHz-Ih-spv" secondAttribute="trailing" id="k1i-6t-9bm"/>
+                    <constraint firstItem="1Gg-cC-dmn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ld9-BQ-Rha"/>
+                    <constraint firstItem="1Gg-cC-dmn" firstAttribute="top" secondItem="jg0-aV-Azq" secondAttribute="bottom" constant="10" id="qVK-lR-iii"/>
+                    <constraint firstItem="imr-cx-Poi" firstAttribute="top" secondItem="fHz-Ih-spv" secondAttribute="bottom" constant="12.5" id="url-Ks-gwb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="FavSongCVCell" destination="1Gg-cC-dmn" id="5zt-Bd-5f2"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="-104"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

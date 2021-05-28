@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThirdCVCell" id="gTV-IL-0wX" customClass="ThirdCVCell" customModule="AppleMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="253"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="253"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VzR-H1-RSx">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="253"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ts6-gs-S53">
+                                <rect key="frame" x="0.0" y="0.0" width="406" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ts6-gs-S53" secondAttribute="height" multiplier="170:88" id="NQ3-xO-yVv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gW1-qX-kYJ">
+                                <rect key="frame" x="0.0" y="213" width="22.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ts6-gs-S53" secondAttribute="trailing" id="0rK-zt-9c0"/>
+                            <constraint firstItem="gW1-qX-kYJ" firstAttribute="top" secondItem="Ts6-gs-S53" secondAttribute="bottom" constant="3" id="1Oi-E5-X82"/>
+                            <constraint firstItem="Ts6-gs-S53" firstAttribute="leading" secondItem="VzR-H1-RSx" secondAttribute="leading" id="PIE-22-DjE"/>
+                            <constraint firstItem="Ts6-gs-S53" firstAttribute="top" secondItem="VzR-H1-RSx" secondAttribute="top" id="cvk-1H-WdD"/>
+                            <constraint firstItem="gW1-qX-kYJ" firstAttribute="leading" secondItem="Ts6-gs-S53" secondAttribute="leading" id="hBe-jh-Bwm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="VzR-H1-RSx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gna-8x-A5l"/>
+                <constraint firstItem="VzR-H1-RSx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LDe-mH-AdV"/>
+                <constraint firstAttribute="trailing" secondItem="VzR-H1-RSx" secondAttribute="trailing" id="Z0k-hM-bO1"/>
+                <constraint firstAttribute="bottom" secondItem="VzR-H1-RSx" secondAttribute="bottom" id="vgd-Ez-dgz"/>
+            </constraints>
+            <size key="customSize" width="406" height="253"/>
+            <connections>
+                <outlet property="AlbumImageView" destination="Ts6-gs-S53" id="q3A-rV-QYP"/>
+                <outlet property="CategoryLabel" destination="gW1-qX-kYJ" id="n7B-I6-hus"/>
+            </connections>
+            <point key="canvasLocation" x="-105.79710144927537" y="-39.84375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
