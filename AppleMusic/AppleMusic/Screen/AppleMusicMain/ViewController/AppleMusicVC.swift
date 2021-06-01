@@ -14,6 +14,7 @@ class AppleMusicVC: UIViewController {
     @IBOutlet weak var AlbumImageView: UIImageView!
     @IBOutlet weak var playerView: UIVisualEffectView!
     
+    // MARK: Properties
     var firstArray = FirstData()
     var secondArray = SecondData()
     var thirdArray = ThirdData()
@@ -21,12 +22,14 @@ class AppleMusicVC: UIViewController {
     var fifthArray = FifthData()
     var sixthArray = SixthData()
     
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad() // 초기셋팅
         setTVCell()
         setNavigationBar()
         setStyle()
         setDelegate()
+        tapGesture()
     }
     
     // MARK: MainTableView와 Cell 연결
@@ -63,14 +66,14 @@ class AppleMusicVC: UIViewController {
     }
     
     // MARK: UIView tap gesture
-    //    func tapGesture() {
-    //        let tapGesture = UITapGestureRecognizer(target: self, action:#selector(self.screenDidTap(_:)))
-    //        self.view.addGestureRecognizer(tapGesture)
-    //    }
-    //    @objc private func screenDidTap(_ gesture: UITapGestureRecognizer) {
-    //        guard let dvc = self.storyboard?.instantiateViewController(identifier: "PageVC")else{return}
-    //        self.present(dvc, animated: true, completion:nil)
-    //    }
+    func tapGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action:#selector(self.screenDidTap(_:)))
+        self.playerView.addGestureRecognizer(tapGesture)
+    }
+    @objc private func screenDidTap(_ gesture: UITapGestureRecognizer) {
+        guard let dvc = self.storyboard?.instantiateViewController(identifier: "musicPlayVC")else{return}
+        self.present(dvc, animated: true, completion:nil)
+    }
     
 }
 
