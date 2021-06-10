@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Epq-CT-OA6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xwX-c7-RCk">
+            <objects>
+                <tabBarController id="Epq-CT-OA6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rMN-Je-qm1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="K3u-M2-ORO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2M-BG-bUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1291" y="-28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdR-gN-xX2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gko-ZD-z6s">
+                                        <rect key="frame" x="18" y="-8" width="147" height="53"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="XkZ-2t-dik"/>
+                                            <constraint firstAttribute="width" constant="147" id="ixw-QL-L4Y"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="logo2"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8tW-T7-BOu">
+                                        <rect key="frame" x="274" y="12" width="120" height="26"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g80-r6-roK">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="26"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="plus.app" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    </preferredSymbolConfiguration>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nu2-9U-FTU">
+                                                <rect key="frame" x="45" y="0.0" width="27" height="26"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="heart" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    </preferredSymbolConfiguration>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktj-b8-L5b">
+                                                <rect key="frame" x="92" y="0.0" width="28" height="26"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="paperplane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    </preferredSymbolConfiguration>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8tW-T7-BOu" firstAttribute="centerY" secondItem="UdR-gN-xX2" secondAttribute="centerY" id="1bV-pJ-V9X"/>
+                                    <constraint firstItem="gko-ZD-z6s" firstAttribute="leading" secondItem="UdR-gN-xX2" secondAttribute="leading" constant="18" id="6xd-6Y-pfk"/>
+                                    <constraint firstItem="gko-ZD-z6s" firstAttribute="centerY" secondItem="UdR-gN-xX2" secondAttribute="centerY" constant="-6.5" id="S5y-j9-Hp2"/>
+                                    <constraint firstAttribute="height" constant="50" id="evm-UZ-ymJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8tW-T7-BOu" secondAttribute="trailing" constant="20" id="mTQ-Id-an1"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aqL-RB-1xU">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UdR-gN-xX2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="661-ZL-N7s"/>
+                            <constraint firstItem="aqL-RB-1xU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6MF-1x-LLN"/>
+                            <constraint firstItem="UdR-gN-xX2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ius-lC-VwC"/>
+                            <constraint firstItem="aqL-RB-1xU" firstAttribute="top" secondItem="UdR-gN-xX2" secondAttribute="bottom" id="Ycq-n5-Uhm"/>
+                            <constraint firstItem="UdR-gN-xX2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dE0-0q-VFS"/>
+                            <constraint firstItem="aqL-RB-1xU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="nIs-wU-vwv"/>
+                            <constraint firstItem="aqL-RB-1xU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="p4f-1Z-Qzm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="home_unselected" selectedImage="home_selected" id="TVH-ZN-kpa">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="MainTableView" destination="aqL-RB-1xU" id="Bga-5Z-GAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417.39130434782612" y="-28.125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="home_selected" width="22" height="22"/>
+        <image name="home_unselected" width="22" height="22"/>
+        <image name="logo2" width="3294" height="1131"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
