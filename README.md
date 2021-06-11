@@ -5,5 +5,6 @@
 | :----------: | :----------: | :----------: | :----------: | :----------: | 
 | 5/10 ~ 5/20 | 중간점검 | 애플뮤직 | 🎵 | [이동](./AppleMusic/readme/AppleMusic1.md) |
 | 5/20 ~ 5/27 | 최종결과 | 애플뮤직 | 🎵 | [이동](./AppleMusic/readme/AppleMusic2.md) |
-| 5/27 ~ 6/01 | 추가 뷰 구성 | 애플뮤직 | 🎵 | [이동](./AppleMusic/readme/AppleMusic3.md) |
-| 5/27 ~ 6/17 | 중간점검 | 인스타그램 | <img height="20" src="Instagram/readme/인스타그램.png"> | [이동](./Instagram/readme/Instagram1.md) |
+| 5/27 ~ 6/01 | 추가 뷰 구성 | 애플뮤직 | <img height="20" src="AppleMusic/readme/img.png"> | [이동](./AppleMusic/readme/AppleMusic3.md) |
+| 5/27 ~ 6/10 | 중간점검 | 인스타그램 | <img height="25" src="Instagram/readme/인스타그램.jpg"> | [이동](./Instagram/readme/Instagram1.md) |
+| 6/10 ~ 6/17 | 최종결과 | 인스타그램 |  | [이동](./Instagram/readme/Instagram2.md) |
