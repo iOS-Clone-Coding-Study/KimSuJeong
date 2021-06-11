@@ -54,6 +54,8 @@ extension StoryTVCell: UICollectionViewDataSource{
         // 스토리 0번 인덱스에만 값 다르게 주기위해 지정
         if(indexPath.row == 0){
             cell.setFirstIndex()
+        }else{
+            cell.setIndex()
         }
         return cell
     }

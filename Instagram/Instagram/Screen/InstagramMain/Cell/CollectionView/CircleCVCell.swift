@@ -40,5 +40,8 @@ class CircleCVCell: UICollectionViewCell {
         plusBtn.isHidden = false
         circleStoryName.text = "내 스토리"
     }
+    func setIndex() {
+        plusBtn.isHidden = true
+    }
 }
 
