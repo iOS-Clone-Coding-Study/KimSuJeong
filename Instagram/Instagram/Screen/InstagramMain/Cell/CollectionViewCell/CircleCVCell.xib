@@ -11,24 +11,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CircleCVCell" id="gTV-IL-0wX" customClass="CircleCVCell" customModule="Instagram" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="70" height="107"/>
+            <rect key="frame" x="0.0" y="0.0" width="74" height="114"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="70" height="107"/>
+                <rect key="frame" x="0.0" y="0.0" width="74" height="114"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUL-up-OZi">
-                        <rect key="frame" x="0.0" y="0.0" width="70" height="107"/>
+                        <rect key="frame" x="0.0" y="0.0" width="74" height="114"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6l-on-DDm">
-                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYS-Bs-tio">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="W5C-66-g36"/>
-                                    <constraint firstAttribute="width" constant="70" id="qn1-uV-e9y"/>
+                                    <constraint firstAttribute="height" constant="75" id="M9t-MO-5OD"/>
+                                    <constraint firstAttribute="width" constant="75" id="jL8-gh-kIN"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6l-on-DDm">
+                                <rect key="frame" x="5" y="5" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Dvs-IC-uBM"/>
+                                    <constraint firstAttribute="width" constant="65" id="NwU-r4-pHN"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-uE-fRM">
-                                <rect key="frame" x="17" y="75" width="36" height="17"/>
+                                <rect key="frame" x="19.5" y="80" width="36" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -60,11 +68,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QbC-uE-fRM" firstAttribute="centerX" secondItem="Z6l-on-DDm" secondAttribute="centerX" id="5ZG-PQ-T8K"/>
                             <constraint firstItem="bi0-WL-1wi" firstAttribute="top" secondItem="iUL-up-OZi" secondAttribute="top" constant="40" id="C4Y-fy-es0"/>
-                            <constraint firstItem="QbC-uE-fRM" firstAttribute="top" secondItem="Z6l-on-DDm" secondAttribute="bottom" constant="5" id="NFD-JM-ivO"/>
-                            <constraint firstItem="Z6l-on-DDm" firstAttribute="leading" secondItem="iUL-up-OZi" secondAttribute="leading" id="XTC-Y9-KCZ"/>
-                            <constraint firstItem="Z6l-on-DDm" firstAttribute="top" secondItem="iUL-up-OZi" secondAttribute="top" id="gbd-n3-t8o"/>
-                            <constraint firstItem="QbC-uE-fRM" firstAttribute="centerX" secondItem="Z6l-on-DDm" secondAttribute="centerX" id="giI-RT-JWN"/>
+                            <constraint firstItem="QbC-uE-fRM" firstAttribute="top" secondItem="aYS-Bs-tio" secondAttribute="bottom" constant="5" id="Igl-dN-1hW"/>
+                            <constraint firstItem="Z6l-on-DDm" firstAttribute="centerY" secondItem="aYS-Bs-tio" secondAttribute="centerY" id="JU1-HP-WPZ"/>
+                            <constraint firstItem="aYS-Bs-tio" firstAttribute="top" secondItem="iUL-up-OZi" secondAttribute="top" id="fFz-Ek-iMP"/>
+                            <constraint firstItem="aYS-Bs-tio" firstAttribute="leading" secondItem="iUL-up-OZi" secondAttribute="leading" id="hsg-Em-rhU"/>
+                            <constraint firstItem="Z6l-on-DDm" firstAttribute="centerX" secondItem="aYS-Bs-tio" secondAttribute="centerX" id="ilb-Sc-rrU"/>
                             <constraint firstItem="bi0-WL-1wi" firstAttribute="leading" secondItem="iUL-up-OZi" secondAttribute="leading" constant="40" id="lLf-Oe-PBG"/>
                         </constraints>
                     </view>
@@ -77,13 +87,14 @@
                 <constraint firstAttribute="bottom" secondItem="iUL-up-OZi" secondAttribute="bottom" id="YiX-Bh-Olj"/>
                 <constraint firstAttribute="trailing" secondItem="iUL-up-OZi" secondAttribute="trailing" id="ezU-AV-phf"/>
             </constraints>
-            <size key="customSize" width="70" height="107"/>
+            <size key="customSize" width="74" height="114"/>
             <connections>
+                <outlet property="circleBackground" destination="aYS-Bs-tio" id="wsO-nR-AkS"/>
                 <outlet property="circleStoryImage" destination="Z6l-on-DDm" id="S8d-au-hYO"/>
                 <outlet property="circleStoryName" destination="QbC-uE-fRM" id="KF5-zG-sj2"/>
                 <outlet property="plusBtn" destination="bi0-WL-1wi" id="0Gv-hX-c5h"/>
             </connections>
-            <point key="canvasLocation" x="13.043478260869566" y="27.120535714285712"/>
+            <point key="canvasLocation" x="15.942028985507248" y="29.464285714285712"/>
         </collectionViewCell>
     </objects>
     <resources>

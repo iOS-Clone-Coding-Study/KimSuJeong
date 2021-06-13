@@ -53,6 +53,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-3T-mjF">
                                 <rect key="frame" x="0.0" y="0.0" width="25" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9c2-3T-mjF" secondAttribute="height" multiplier="25:23" id="1Vm-mb-Haw"/>
+                                </constraints>
                                 <state key="normal" image="heart" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="medium">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
@@ -65,6 +68,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwL-E3-Gz3">
                                 <rect key="frame" x="40" y="0.0" width="25" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nwL-E3-Gz3" secondAttribute="height" multiplier="25:23" id="lyw-fj-9KL"/>
+                                </constraints>
                                 <state key="normal" image="message" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="medium">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
@@ -73,6 +79,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78Q-P1-SC5">
                                 <rect key="frame" x="80" y="0.0" width="24" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="78Q-P1-SC5" secondAttribute="height" multiplier="24:23" id="FuF-yY-e4r"/>
+                                </constraints>
                                 <state key="normal" image="paperplane" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="medium">
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
@@ -84,6 +93,10 @@
                     </stackView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbk-2t-32T">
                         <rect key="frame" x="327.5" y="440" width="19.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="63m-Cy-rr4"/>
+                            <constraint firstAttribute="width" constant="19.5" id="lQ1-Z3-JsI"/>
+                        </constraints>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" image="bookmark" catalog="system">
                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="default" weight="medium">
@@ -95,20 +108,35 @@
                             <action selector="touchUpBookMark:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="N1P-M6-pZf"/>
                         </connections>
                     </button>
-                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="t8Q-YH-OSJ">
-                        <rect key="frame" x="123" y="437" width="121.5" height="27.5"/>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="t8Q-YH-OSJ">
+                        <rect key="frame" x="134.5" y="437" width="98" height="27.5"/>
                         <color key="pageIndicatorTintColor" systemColor="systemGray4Color"/>
                         <color key="currentPageIndicatorTintColor" systemColor="systemBlueColor"/>
                     </pageControl>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ch2-hM-0TM">
                         <rect key="frame" x="20" y="469.5" width="85" height="41.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-Uj-sWY">
-                                <rect key="frame" x="0.0" y="0.0" width="37.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="rwR-TG-U47">
+                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-Uj-sWY">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5C-Bm-xVk">
+                                        <rect key="frame" x="40.5" y="0.0" width="39" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="H5C-Bm-xVk" firstAttribute="leading" secondItem="Zo9-Uj-sWY" secondAttribute="trailing" constant="3" id="B5x-aP-8IJ"/>
+                                    <constraint firstItem="H5C-Bm-xVk" firstAttribute="centerY" secondItem="Zo9-Uj-sWY" secondAttribute="centerY" id="Ybw-q0-jjH"/>
+                                </constraints>
+                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9w2-KT-AhM">
                                 <rect key="frame" x="0.0" y="21" width="85" height="20.5"/>
                                 <subviews>
@@ -141,6 +169,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="zNr-m0-wUn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0fG-EK-0mT"/>
+                    <constraint firstItem="pbk-2t-32T" firstAttribute="leading" secondItem="t8Q-YH-OSJ" secondAttribute="trailing" constant="95" id="1pr-Su-gGB"/>
                     <constraint firstItem="ch2-hM-0TM" firstAttribute="top" secondItem="t8Q-YH-OSJ" secondAttribute="bottom" constant="5" id="1sT-Tx-rVv"/>
                     <constraint firstAttribute="trailing" secondItem="Jai-AS-PVY" secondAttribute="trailing" id="2Zc-Tj-59c"/>
                     <constraint firstItem="Jai-AS-PVY" firstAttribute="top" secondItem="zNr-m0-wUn" secondAttribute="bottom" constant="10" id="8rs-6e-FpJ"/>
@@ -168,6 +197,7 @@
                 <outlet property="bookMarkButton" destination="pbk-2t-32T" id="ifw-BG-uHq"/>
                 <outlet property="contentsLabel" destination="sGK-LU-S8A" id="Ay3-4v-mLl"/>
                 <outlet property="goodLabel" destination="Zo9-Uj-sWY" id="dKO-2h-8yy"/>
+                <outlet property="heartCount" destination="H5C-Bm-xVk" id="dmC-4l-I0R"/>
                 <outlet property="idImage" destination="zNr-m0-wUn" id="Kyv-7u-yP2"/>
                 <outlet property="idLabel" destination="HVk-LB-9CB" id="67l-nL-WYL"/>
                 <outlet property="idName" destination="218-2p-dhR" id="PlL-Ec-CmR"/>

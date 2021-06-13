@@ -20,12 +20,14 @@ class FriendsTVCell: UITableViewCell {
     @IBOutlet weak var contentsLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var heartCount: UILabel!
     @IBOutlet weak var bookMarkButton: UIButton!
     @IBOutlet weak var FriendsCVCell: UICollectionView!
     
     // MARK: Properties
     var post : [Rec] = []
     var minItemSpacing = 10
+    var heartCo = 0
     
     static func nib() -> UINib{
         return UINib(nibName: "FriendsTVCell", bundle: nil)
@@ -56,13 +58,24 @@ class FriendsTVCell: UITableViewCell {
         self.FriendsCVCell.decelerationRate = .fast
         idImage.layer.cornerRadius = idImage.frame.height/2
         
+        goodLabel.isHidden = true
+        heartCount.isHidden = true
         // pageControl.transform = CGAffineTransform(scaleX: 1, y: 1)
     }
+    
+
     
     // MARK: PageControl 초기 Layout 설정
     func pageControlInitLayout() {
         pageControl.numberOfPages = post.count
+        
+        
+    
+        self.pageControl.allowsContinuousInteraction = true
         pageControl.currentPageIndicatorTintColor = .systemBlue
+        
+//        pageControl.transform = CGAffineTransform.init(scaleX: 1/2, y: 1/2)
+        //pageControl?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
     }
     
     // MARK: IBAction
@@ -82,9 +95,17 @@ class FriendsTVCell: UITableViewCell {
         if sender.isSelected == false {
             sender.isSelected = true
             likeButton.tintColor = .systemPink
+            heartCo += 1
+            heartCount.text = String(heartCo)+"개"
+            goodLabel.isHidden = false
+            heartCount.isHidden = false
         }else{
             sender.isSelected = false
             likeButton.tintColor = .black
+            heartCo -= 1
+            heartCount.text = String(heartCo)
+            goodLabel.isHidden = true
+            heartCount.isHidden = true
         }
     }
     

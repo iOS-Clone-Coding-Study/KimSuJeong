@@ -13,8 +13,10 @@ class CircleCVCell: UICollectionViewCell {
     
     // MARK: IBOutlets
     @IBOutlet weak var plusBtn: UIView!
+    @IBOutlet weak var circleBackground: UIView!
     @IBOutlet weak var circleStoryImage: UIImageView!
     @IBOutlet weak var circleStoryName: UILabel!
+    
     
     // MARK: TableView에 뿌려줄 Collectionview Data
     func setCell(story: Circle){
@@ -33,15 +35,20 @@ class CircleCVCell: UICollectionViewCell {
         circleStoryImage.layer.cornerRadius = circleStoryImage.frame.height/2
         circleStoryImage.layer.masksToBounds = true
         plusBtn.layer.cornerRadius = plusBtn.frame.height/2
+        circleBackground.layer.cornerRadius = circleBackground.frame.height/2
+        circleBackground.layer.borderWidth = 0.5
+        circleBackground.layer.borderColor = UIColor.systemGray.cgColor
     }
     
     // MARK: 스토리 0번 인덱스에만 값 다르게 주기위해 지정
     func setFirstIndex() {
         plusBtn.isHidden = false
+        circleBackground.isHidden = true
         circleStoryName.text = "내 스토리"
     }
     func setIndex() {
         plusBtn.isHidden = true
+        circleBackground.isHidden = false
     }
 }
 
