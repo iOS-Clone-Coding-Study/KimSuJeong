@@ -12,5 +12,14 @@ struct SecondData {
         Rec(RecImage: "smallAlbumArt11"),
         Rec(RecImage: "smallAlbumArt11"),
         Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
+        Rec(RecImage: "smallAlbumArt11"),
     ]
 }
