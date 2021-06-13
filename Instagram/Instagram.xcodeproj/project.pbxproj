@@ -36,6 +36,7 @@
 		DD2075B62671EE7400306CCB /* SecondTVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075B52671EE7400306CCB /* SecondTVData.swift */; };
 		DD2075B826720A2400306CCB /* ThirdTVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075B726720A2400306CCB /* ThirdTVData.swift */; };
 		DD2075BA26720A7800306CCB /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075B926720A7800306CCB /* CardData.swift */; };
+		DD2075BC2676062200306CCB /* DMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075BB2676062200306CCB /* DMVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		DD2075B52671EE7400306CCB /* SecondTVData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTVData.swift; sourceTree = "<group>"; };
 		DD2075B726720A2400306CCB /* ThirdTVData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTVData.swift; sourceTree = "<group>"; };
 		DD2075B926720A7800306CCB /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		DD2075BB2676062200306CCB /* DMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				DD08CEF02666297F00FFEB88 /* ViewController.swift */,
+				DD2075BB2676062200306CCB /* DMVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				DD08CF27266E155C00FFEB88 /* Rec.swift in Sources */,
 				DD2075B62671EE7400306CCB /* SecondTVData.swift in Sources */,
 				DD2075B22670BA5C00306CCB /* ThirdData.swift in Sources */,
+				DD2075BC2676062200306CCB /* DMVC.swift in Sources */,
 				DD2075B42671EDE700306CCB /* RecData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
