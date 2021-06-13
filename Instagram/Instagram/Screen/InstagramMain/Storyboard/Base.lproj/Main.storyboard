@@ -115,6 +115,21 @@
             </objects>
             <point key="canvasLocation" x="-417.39130434782612" y="-28.125"/>
         </scene>
+        <!--DMVC-->
+        <scene sceneID="MPv-L4-DMY">
+            <objects>
+                <viewController storyboardIdentifier="DMVC" id="dWL-rd-G54" customClass="DMVC" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dWy-SR-dEF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="qe7-9W-8vf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMG-Nd-Xn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="-34"/>
+        </scene>
     </scenes>
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
