@@ -45,6 +45,9 @@ class ViewController: UIViewController {
         // Tableview 선 제거
         MainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
+    
+
+
 }
 
 extension ViewController: UITableViewDelegate{
@@ -74,6 +77,7 @@ extension ViewController: UITableViewDataSource{
             // tableview cell 내 collectionview에게 데이터 전달
             let rowArray = secondArray.objectsArray
             cell.updateCellWith(row: rowArray)
+            cell.pageControlInitLayout()
             
             // tableview 내 데이터 전달
             // 전달 데이터가 하나라서 0번째 것만 뿌려줌
@@ -104,7 +108,7 @@ extension ViewController: UITableViewDataSource{
     // 각 행 별로 높이 지정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if(indexPath.row == 0) {
-            return 100
+            return 105
         }else if(indexPath.row == 1) {
             return 600
         }else if(indexPath.row == 2) {
