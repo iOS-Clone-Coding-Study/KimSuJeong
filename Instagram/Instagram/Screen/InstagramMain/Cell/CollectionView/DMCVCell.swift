@@ -57,6 +57,34 @@ extension DMCVCell: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView,
+                    leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+     {
+         let closeAction = UIContextualAction(style: .normal, title:  "Close", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                 print("OK, marked as Closed")
+                 success(true)
+             })
+             closeAction.image = UIImage(named: "tick")
+             closeAction.backgroundColor = .purple
+     
+             return UISwipeActionsConfiguration(actions: [closeAction])
+     
+     }
+     
+     func tableView(_ tableView: UITableView,
+                    trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
+     {
+         let modifyAction = UIContextualAction(style: .normal, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+             print("Update action ...")
+             success(true)
+         })
+         modifyAction.image = UIImage(named: "hammer")
+         modifyAction.backgroundColor = .blue
+     
+         return UISwipeActionsConfiguration(actions: [modifyAction])
+     }
+
+    
     
 }
 

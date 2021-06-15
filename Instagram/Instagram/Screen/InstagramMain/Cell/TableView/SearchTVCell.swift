@@ -35,9 +35,8 @@ class SearchTVCell: UITableViewCell {
         // DataSource & Delegate
         self.SearchCVCell.dataSource = self
         self.SearchCVCell.delegate = self
-    
-    
     }
+
 
 
     
@@ -68,6 +67,8 @@ extension SearchTVCell: UICollectionViewDataSource{
         
         return cell
     }
+    
+    
 }
 
 extension SearchTVCell: UICollectionViewDelegateFlowLayout{

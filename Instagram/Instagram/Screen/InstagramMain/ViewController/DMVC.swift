@@ -20,6 +20,8 @@ class DMVC: UIViewController {
         setDelegate()
         setTVCell()
         setStyle()
+        
+
     }
     
     func setTVCell() {
@@ -91,4 +93,6 @@ extension DMVC: UITableViewDataSource{
             return 0
         }
     }
+    
+    
 }
