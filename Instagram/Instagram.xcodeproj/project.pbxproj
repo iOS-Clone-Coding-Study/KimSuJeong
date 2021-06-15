@@ -37,6 +37,23 @@
 		DD2075B826720A2400306CCB /* ThirdTVData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075B726720A2400306CCB /* ThirdTVData.swift */; };
 		DD2075BA26720A7800306CCB /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075B926720A7800306CCB /* CardData.swift */; };
 		DD2075BC2676062200306CCB /* DMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075BB2676062200306CCB /* DMVC.swift */; };
+		DD2075BF26775E5600306CCB /* SwipeTabBarTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075BD26775E5600306CCB /* SwipeTabBarTVCell.swift */; };
+		DD2075C026775E5600306CCB /* SwipeTabBarTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2075BE26775E5600306CCB /* SwipeTabBarTVCell.xib */; };
+		DD2075C726775F3D00306CCB /* TabBarCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075C526775F3D00306CCB /* TabBarCVCell.swift */; };
+		DD2075C826775F3D00306CCB /* TabBarCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2075C626775F3D00306CCB /* TabBarCVCell.xib */; };
+		DD2075CA267788F600306CCB /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075C9267788F600306CCB /* Tab.swift */; };
+		DD2075CC2677893800306CCB /* TabData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2075CB2677893800306CCB /* TabData.swift */; };
+		DD2076032678AD0000306CCB /* RoomsCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2076012678AD0000306CCB /* RoomsCVCell.swift */; };
+		DD2076042678AD0000306CCB /* RoomsCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2076022678AD0000306CCB /* RoomsCVCell.xib */; };
+		DD2076072678B24600306CCB /* SearchTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2076052678B24600306CCB /* SearchTVCell.swift */; };
+		DD2076082678B24600306CCB /* SearchTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2076062678B24600306CCB /* SearchTVCell.xib */; };
+		DD20760F2678D21B00306CCB /* DMTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20760D2678D21B00306CCB /* DMTVCell.swift */; };
+		DD2076102678D21B00306CCB /* DMTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD20760E2678D21B00306CCB /* DMTVCell.xib */; };
+		DD2076132678D3A900306CCB /* DMCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2076112678D3A900306CCB /* DMCVCell.swift */; };
+		DD2076142678D3A900306CCB /* DMCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2076122678D3A900306CCB /* DMCVCell.xib */; };
+		DD2076162678D61300306CCB /* DM.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2076152678D61300306CCB /* DM.swift */; };
+		DD2076182678D6CE00306CCB /* DMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2076172678D6CE00306CCB /* DMessage.swift */; };
+		DD20761A2678DA6600306CCB /* FourthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2076192678DA6600306CCB /* FourthData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +89,23 @@
 		DD2075B726720A2400306CCB /* ThirdTVData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTVData.swift; sourceTree = "<group>"; };
 		DD2075B926720A7800306CCB /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		DD2075BB2676062200306CCB /* DMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMVC.swift; sourceTree = "<group>"; };
+		DD2075BD26775E5600306CCB /* SwipeTabBarTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabBarTVCell.swift; sourceTree = "<group>"; };
+		DD2075BE26775E5600306CCB /* SwipeTabBarTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeTabBarTVCell.xib; sourceTree = "<group>"; };
+		DD2075C526775F3D00306CCB /* TabBarCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCVCell.swift; sourceTree = "<group>"; };
+		DD2075C626775F3D00306CCB /* TabBarCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarCVCell.xib; sourceTree = "<group>"; };
+		DD2075C9267788F600306CCB /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		DD2075CB2677893800306CCB /* TabData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabData.swift; sourceTree = "<group>"; };
+		DD2076012678AD0000306CCB /* RoomsCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsCVCell.swift; sourceTree = "<group>"; };
+		DD2076022678AD0000306CCB /* RoomsCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomsCVCell.xib; sourceTree = "<group>"; };
+		DD2076052678B24600306CCB /* SearchTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTVCell.swift; sourceTree = "<group>"; };
+		DD2076062678B24600306CCB /* SearchTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTVCell.xib; sourceTree = "<group>"; };
+		DD20760D2678D21B00306CCB /* DMTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMTVCell.swift; sourceTree = "<group>"; };
+		DD20760E2678D21B00306CCB /* DMTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMTVCell.xib; sourceTree = "<group>"; };
+		DD2076112678D3A900306CCB /* DMCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCVCell.swift; sourceTree = "<group>"; };
+		DD2076122678D3A900306CCB /* DMCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DMCVCell.xib; sourceTree = "<group>"; };
+		DD2076152678D61300306CCB /* DM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DM.swift; sourceTree = "<group>"; };
+		DD2076172678D6CE00306CCB /* DMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMessage.swift; sourceTree = "<group>"; };
+		DD2076192678DA6600306CCB /* FourthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +227,9 @@
 				DD08CF0F26666F8500FFEB88 /* StoryTVCell.xib */,
 				DD08CF1F266DFB5600FFEB88 /* FriendsTVCell.xib */,
 				DD2075A6266FC30B00306CCB /* RecomTVCell.xib */,
+				DD2075BE26775E5600306CCB /* SwipeTabBarTVCell.xib */,
+				DD2076062678B24600306CCB /* SearchTVCell.xib */,
+				DD20760E2678D21B00306CCB /* DMTVCell.xib */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -203,6 +240,9 @@
 				DD08CF0E26666F8500FFEB88 /* StoryTVCell.swift */,
 				DD08CF1E266DFB5600FFEB88 /* FriendsTVCell.swift */,
 				DD2075A5266FC30B00306CCB /* RecomTVCell.swift */,
+				DD2075BD26775E5600306CCB /* SwipeTabBarTVCell.swift */,
+				DD2076052678B24600306CCB /* SearchTVCell.swift */,
+				DD20760D2678D21B00306CCB /* DMTVCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -213,6 +253,9 @@
 				DD08CF142666720400FFEB88 /* CircleCVCell.swift */,
 				DD08CF22266E129F00FFEB88 /* ImageCVCell.swift */,
 				DD2075AB2670B5FA00306CCB /* RecomCardCVCell.swift */,
+				DD2075C526775F3D00306CCB /* TabBarCVCell.swift */,
+				DD2076012678AD0000306CCB /* RoomsCVCell.swift */,
+				DD2076112678D3A900306CCB /* DMCVCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -223,6 +266,9 @@
 				DD08CF152666720400FFEB88 /* CircleCVCell.xib */,
 				DD08CF23266E129F00FFEB88 /* ImageCVCell.xib */,
 				DD2075AC2670B5FA00306CCB /* RecomCardCVCell.xib */,
+				DD2075C626775F3D00306CCB /* TabBarCVCell.xib */,
+				DD2076022678AD0000306CCB /* RoomsCVCell.xib */,
+				DD2076122678D3A900306CCB /* DMCVCell.xib */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -235,6 +281,9 @@
 				DD2075B32671EDE700306CCB /* RecData.swift */,
 				DD2075AF2670B90400306CCB /* Card.swift */,
 				DD2075B926720A7800306CCB /* CardData.swift */,
+				DD2075C9267788F600306CCB /* Tab.swift */,
+				DD2076152678D61300306CCB /* DM.swift */,
+				DD2076172678D6CE00306CCB /* DMessage.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -247,6 +296,8 @@
 				DD2075B52671EE7400306CCB /* SecondTVData.swift */,
 				DD2075B12670BA5C00306CCB /* ThirdData.swift */,
 				DD2075B726720A2400306CCB /* ThirdTVData.swift */,
+				DD2075CB2677893800306CCB /* TabData.swift */,
+				DD2076192678DA6600306CCB /* FourthData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -309,13 +360,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2075A8266FC30B00306CCB /* RecomTVCell.xib in Resources */,
+				DD2076142678D3A900306CCB /* DMCVCell.xib in Resources */,
+				DD2076082678B24600306CCB /* SearchTVCell.xib in Resources */,
 				DD08CF172666720400FFEB88 /* CircleCVCell.xib in Resources */,
 				DD08CEF92666298100FFEB88 /* LaunchScreen.storyboard in Resources */,
+				DD2076102678D21B00306CCB /* DMTVCell.xib in Resources */,
 				DD2075AE2670B5FA00306CCB /* RecomCardCVCell.xib in Resources */,
 				DD08CF25266E129F00FFEB88 /* ImageCVCell.xib in Resources */,
 				DD08CEF62666298100FFEB88 /* Assets.xcassets in Resources */,
 				DD08CEF42666297F00FFEB88 /* Main.storyboard in Resources */,
+				DD2075C826775F3D00306CCB /* TabBarCVCell.xib in Resources */,
 				DD08CF1126666F8500FFEB88 /* StoryTVCell.xib in Resources */,
+				DD2076042678AD0000306CCB /* RoomsCVCell.xib in Resources */,
+				DD2075C026775E5600306CCB /* SwipeTabBarTVCell.xib in Resources */,
 				DD08CF21266DFB5600FFEB88 /* FriendsTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,22 +387,33 @@
 				DD08CF1A266676F800FFEB88 /* Circle.swift in Sources */,
 				DD08CEF12666297F00FFEB88 /* ViewController.swift in Sources */,
 				DD08CEED2666297F00FFEB88 /* AppDelegate.swift in Sources */,
+				DD2075CA267788F600306CCB /* Tab.swift in Sources */,
+				DD20760F2678D21B00306CCB /* DMTVCell.swift in Sources */,
 				DD2075B826720A2400306CCB /* ThirdTVData.swift in Sources */,
 				DD08CF20266DFB5600FFEB88 /* FriendsTVCell.swift in Sources */,
+				DD2076072678B24600306CCB /* SearchTVCell.swift in Sources */,
+				DD2076162678D61300306CCB /* DM.swift in Sources */,
 				DD2075BA26720A7800306CCB /* CardData.swift in Sources */,
 				DD08CF162666720400FFEB88 /* CircleCVCell.swift in Sources */,
+				DD2075C726775F3D00306CCB /* TabBarCVCell.swift in Sources */,
 				DD08CF1D266678FF00FFEB88 /* FirstData.swift in Sources */,
 				DD08CF24266E129F00FFEB88 /* ImageCVCell.swift in Sources */,
 				DD2075B02670B90400306CCB /* Card.swift in Sources */,
 				DD08CF0A266640DA00FFEB88 /* UIView+Extension.swift in Sources */,
 				DD08CEEF2666297F00FFEB88 /* SceneDelegate.swift in Sources */,
+				DD2075BF26775E5600306CCB /* SwipeTabBarTVCell.swift in Sources */,
+				DD2076032678AD0000306CCB /* RoomsCVCell.swift in Sources */,
 				DD08CF29266E15A600FFEB88 /* SecondData.swift in Sources */,
 				DD08CF1026666F8500FFEB88 /* StoryTVCell.swift in Sources */,
 				DD2075AD2670B5FA00306CCB /* RecomCardCVCell.swift in Sources */,
 				DD2075A7266FC30B00306CCB /* RecomTVCell.swift in Sources */,
 				DD08CF27266E155C00FFEB88 /* Rec.swift in Sources */,
 				DD2075B62671EE7400306CCB /* SecondTVData.swift in Sources */,
+				DD2075CC2677893800306CCB /* TabData.swift in Sources */,
+				DD2076182678D6CE00306CCB /* DMessage.swift in Sources */,
+				DD2076132678D3A900306CCB /* DMCVCell.swift in Sources */,
 				DD2075B22670BA5C00306CCB /* ThirdData.swift in Sources */,
+				DD20761A2678DA6600306CCB /* FourthData.swift in Sources */,
 				DD2075BC2676062200306CCB /* DMVC.swift in Sources */,
 				DD2075B42671EDE700306CCB /* RecData.swift in Sources */,
 			);

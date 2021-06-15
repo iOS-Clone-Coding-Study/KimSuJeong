@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Epq-CT-OA6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dWL-rd-G54">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -122,22 +122,100 @@
                     <view key="view" contentMode="scaleToFill" id="dWy-SR-dEF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGg-3r-5xR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ptr-Nq-lqM">
+                                        <rect key="frame" x="20" y="14" width="16" height="22.5"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron.backward" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                            </preferredSymbolConfiguration>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7u-nz-6TK">
+                                        <rect key="frame" x="51" y="11" width="114" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="suzumsz " image="chevron.down" catalog="system">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vMk-7s-NSK">
+                                        <rect key="frame" x="314.5" y="12.5" width="79.5" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daE-xd-xeK">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="25"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="video" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    </preferredSymbolConfiguration>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbv-Bd-zPW">
+                                                <rect key="frame" x="52" y="0.0" width="27.5" height="25"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="square.and.pencil" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large" weight="medium">
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    </preferredSymbolConfiguration>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vMk-7s-NSK" secondAttribute="trailing" constant="20" id="2lo-ec-7Ci"/>
+                                    <constraint firstItem="L7u-nz-6TK" firstAttribute="leading" secondItem="Ptr-Nq-lqM" secondAttribute="trailing" constant="15" id="Kj5-z6-M6E"/>
+                                    <constraint firstItem="Ptr-Nq-lqM" firstAttribute="leading" secondItem="gGg-3r-5xR" secondAttribute="leading" constant="20" id="LFc-Ru-lTR"/>
+                                    <constraint firstItem="Ptr-Nq-lqM" firstAttribute="centerY" secondItem="gGg-3r-5xR" secondAttribute="centerY" id="VrS-IU-l0k"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zgb-9c-aYD"/>
+                                    <constraint firstItem="vMk-7s-NSK" firstAttribute="centerY" secondItem="L7u-nz-6TK" secondAttribute="centerY" id="a1O-2S-fN6"/>
+                                    <constraint firstItem="L7u-nz-6TK" firstAttribute="centerY" secondItem="Ptr-Nq-lqM" secondAttribute="centerY" id="yNa-73-EFA"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="99H-Yf-oCu">
+                                <rect key="frame" x="0.0" y="94" width="414" height="768"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qe7-9W-8vf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="99H-Yf-oCu" firstAttribute="top" secondItem="gGg-3r-5xR" secondAttribute="bottom" id="G08-xP-aKF"/>
+                            <constraint firstItem="99H-Yf-oCu" firstAttribute="leading" secondItem="qe7-9W-8vf" secondAttribute="leading" id="MCi-YH-P9a"/>
+                            <constraint firstItem="gGg-3r-5xR" firstAttribute="trailing" secondItem="qe7-9W-8vf" secondAttribute="trailing" id="Oe7-Ee-4db"/>
+                            <constraint firstItem="gGg-3r-5xR" firstAttribute="leading" secondItem="qe7-9W-8vf" secondAttribute="leading" id="PTf-5U-CFl"/>
+                            <constraint firstItem="99H-Yf-oCu" firstAttribute="trailing" secondItem="qe7-9W-8vf" secondAttribute="trailing" id="oQt-0c-2b4"/>
+                            <constraint firstItem="gGg-3r-5xR" firstAttribute="top" secondItem="qe7-9W-8vf" secondAttribute="top" id="pR7-3p-bOx"/>
+                            <constraint firstItem="qe7-9W-8vf" firstAttribute="bottom" secondItem="99H-Yf-oCu" secondAttribute="bottom" id="udQ-Df-lUL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="MainTableView" destination="99H-Yf-oCu" id="CQp-tz-Y8G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMG-Nd-Xn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="-34"/>
+            <point key="canvasLocation" x="472" y="-28"/>
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="home_selected" width="22" height="22"/>
         <image name="home_unselected" width="22" height="22"/>
         <image name="logo2" width="3294" height="1131"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <image name="video" catalog="system" width="128" height="83"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

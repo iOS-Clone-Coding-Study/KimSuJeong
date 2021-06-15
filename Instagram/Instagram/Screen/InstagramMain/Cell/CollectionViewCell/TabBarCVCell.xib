@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TabBarCVCell" id="gTV-IL-0wX" customClass="TabBarCVCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpN-0Y-op7">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="64"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGJ-tV-Xx3">
+                        <rect key="frame" x="77" y="24" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="WGJ-tV-Xx3" firstAttribute="centerY" secondItem="vpN-0Y-op7" secondAttribute="centerY" id="1cv-qR-ECn"/>
+                <constraint firstItem="WGJ-tV-Xx3" firstAttribute="centerX" secondItem="vpN-0Y-op7" secondAttribute="centerX" id="5du-bV-CK4"/>
+                <constraint firstAttribute="bottom" secondItem="vpN-0Y-op7" secondAttribute="bottom" id="9lA-cf-I1f"/>
+                <constraint firstItem="vpN-0Y-op7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VXy-4f-YRJ"/>
+                <constraint firstAttribute="trailing" secondItem="vpN-0Y-op7" secondAttribute="trailing" id="ZFC-UD-Ox3"/>
+                <constraint firstItem="vpN-0Y-op7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jKR-Gc-x8t"/>
+            </constraints>
+            <size key="customSize" width="187" height="64"/>
+            <connections>
+                <outlet property="tabGesture" destination="vpN-0Y-op7" id="1Br-1N-wX8"/>
+                <outlet property="tabLabel" destination="WGJ-tV-Xx3" id="Z9v-cA-HpZ"/>
+            </connections>
+            <point key="canvasLocation" x="-34.057971014492757" y="101.11607142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
