@@ -13,6 +13,7 @@ class DMVC: UIViewController {
     var FourthArray = FourthData()
     
     @IBOutlet weak var MainTableView: UITableView!
+    @IBOutlet weak var backBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,10 @@ class DMVC: UIViewController {
         MainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
 
+    @IBAction func touchBackBtn(_ sender: Any) {
+       
+        self.dismiss(animated: true)
+    }
     
 }
 extension DMVC: UITableViewDelegate{

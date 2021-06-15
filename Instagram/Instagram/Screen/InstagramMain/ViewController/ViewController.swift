@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     // MARK: IBOutlet
     @IBOutlet weak var MainTableView: UITableView!
+    @IBOutlet weak var directMessage: UIButton!
     
     // MARK: LifeCycle
     override func viewDidLoad() {
@@ -47,7 +48,12 @@ class ViewController: UIViewController {
     }
     
 
-
+    @IBAction func directMessage(_ sender: UIButton) {
+        
+        guard let dvc = self.storyboard?.instantiateViewController(identifier: "DMVC")else{return}
+                self.present(dvc, animated: true, completion:nil)
+    }
+    
 }
 
 extension ViewController: UITableViewDelegate{
