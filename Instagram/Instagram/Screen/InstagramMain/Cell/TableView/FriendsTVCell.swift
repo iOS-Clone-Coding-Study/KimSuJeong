@@ -68,9 +68,6 @@ class FriendsTVCell: UITableViewCell {
     // MARK: PageControl 초기 Layout 설정
     func pageControlInitLayout() {
         pageControl.numberOfPages = post.count
-        
-        
-    
         self.pageControl.allowsContinuousInteraction = true
         pageControl.currentPageIndicatorTintColor = .systemBlue
         
@@ -123,6 +120,7 @@ extension FriendsTVCell {
         pageControl.currentPage =
             Int(scrollView.contentOffset.x)/Int(scrollView.frame.width)
     }
+    
 }
 
 extension FriendsTVCell: UICollectionViewDataSource {

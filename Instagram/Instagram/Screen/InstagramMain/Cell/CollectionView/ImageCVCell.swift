@@ -15,12 +15,14 @@ class ImageCVCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
     }
     
     // MARK: TableView에 뿌려줄 Collectionview Data
     func setCell(post: Rec){
         imageView.image = UIImage(named: post.RecImage)
     }
+    
     
     static func nib() -> UINib{
         return UINib(nibName: "ImageCVCell", bundle: nil)

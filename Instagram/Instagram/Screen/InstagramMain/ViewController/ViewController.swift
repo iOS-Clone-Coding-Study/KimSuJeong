@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     var secondTVArray = SecondTVData()
     var thirdArray = ThirdData()
     var thirdTVArray = ThirdTVData()
+    var fifthArray = FifthData()
+    var fifthTVArray = FifthTVData()
+    
     
     // MARK: IBOutlet
     @IBOutlet weak var MainTableView: UITableView!
@@ -26,6 +29,7 @@ class ViewController: UIViewController {
         setTVCell()
         setDelegate()
         setStyle()
+        swipeGesture()
     }
     
     // MARK: Cell 등록
@@ -47,11 +51,35 @@ class ViewController: UIViewController {
         MainTableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
     }
     
+    // MARK: UIView swipe gesture
+    func swipeGesture() {
+        let swipeRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(_:)))
+        swipeRecognizer.direction = .right
+        self.MainTableView.addGestureRecognizer(swipeRecognizer)
+    }
+
+@objc func swipeAction(_ sender :UISwipeGestureRecognizer){
+        if sender.direction == .right{
+            guard let dvc = self.storyboard?.instantiateViewController(identifier: "DMVC")else{return}
+                    self.present(dvc, animated: false, completion:nil)
+        }
+
+    }
+
+    
 
     @IBAction func directMessage(_ sender: UIButton) {
         
         guard let dvc = self.storyboard?.instantiateViewController(identifier: "DMVC")else{return}
-                self.present(dvc, animated: true, completion:nil)
+                self.present(dvc, animated: false, completion:nil)
+        
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
+        view.window!.layer.add(transition, forKey: kCATransition)
+        
     }
     
 }
@@ -62,7 +90,7 @@ extension ViewController: UITableViewDelegate{
 extension ViewController: UITableViewDataSource{
     // row행 갯수 리턴
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     // cell 안에 데이터들을 직접 뿌려줌
@@ -105,7 +133,23 @@ extension ViewController: UITableViewDataSource{
             cell.setCell(carddata: carddataTV[0])
             
             return cell
+        }else if(indexPath.row == 3) {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: FriendsTVCell.identifier) as? FriendsTVCell else{
+                return UITableViewCell()
+            }
+            // tableview cell 내 collectionview에게 데이터 전달
+            let rowArray = fifthArray.objectsArray
+            cell.updateCellWith(row: rowArray)
+            cell.pageControlInitLayout()
+            
+            // tableview 내 데이터 전달
+            // 전달 데이터가 하나라서 0번째 것만 뿌려줌
+            let dataTV = fifthTVArray.objectsArray
+            cell.setCell(data: dataTV[0])
+            
+            return cell
         }
+        
         else{
             return UITableViewCell()
         }
@@ -119,6 +163,8 @@ extension ViewController: UITableViewDataSource{
             return 600
         }else if(indexPath.row == 2) {
             return 330
+        }else if(indexPath.row == 3) {
+            return 600
         }else{
             return 0
         }
