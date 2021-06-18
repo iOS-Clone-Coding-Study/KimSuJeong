@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Epq-CT-OA6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -12,6 +12,7 @@
         <scene sceneID="xwX-c7-RCk">
             <objects>
                 <tabBarController id="Epq-CT-OA6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="frC-Ht-g34"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rMN-Je-qm1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -43,7 +44,7 @@
                                             <constraint firstAttribute="height" constant="53" id="XkZ-2t-dik"/>
                                             <constraint firstAttribute="width" constant="147" id="ixw-QL-L4Y"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="logo2"/>
+                                        <state key="normal" image="logo2" backgroundImage="logo2"/>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8tW-T7-BOu">
                                         <rect key="frame" x="274" y="12" width="120" height="26"/>
@@ -210,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMG-Nd-Xn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472" y="-28"/>
+            <point key="canvasLocation" x="414" y="-28"/>
         </scene>
     </scenes>
     <resources>

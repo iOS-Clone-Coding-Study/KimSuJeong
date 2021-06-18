@@ -32,10 +32,7 @@ class SwipeTabBarTVCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-    
 }
 
 extension SwipeTabBarTVCell: UICollectionViewDelegate{
@@ -70,7 +67,5 @@ extension SwipeTabBarTVCell: UICollectionViewDelegateFlowLayout{
     {
         return CGSize(width: (collectionView.frame.width)/2, height: collectionView.frame.height);
     }
-    
-    
 }
 

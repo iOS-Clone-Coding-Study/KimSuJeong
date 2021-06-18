@@ -71,6 +71,9 @@ class FriendsTVCell: UITableViewCell {
         self.pageControl.allowsContinuousInteraction = true
         pageControl.currentPageIndicatorTintColor = .systemBlue
         
+        if pageControl.numberOfPages == 1 {
+            pageControl.isHidden = true
+        }
 //        pageControl.transform = CGAffineTransform.init(scaleX: 1/2, y: 1/2)
         //pageControl?.transform = CGAffineTransform(scaleX: 1.4, y: 1.4)
     }

@@ -44,6 +44,7 @@ extension DMCVCell: UITableViewDataSource {
         return message.count
     }
     
+    // 테이블뷰 셀 높이
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
@@ -57,34 +58,23 @@ extension DMCVCell: UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView,
-                    leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
-     {
-         let closeAction = UIContextualAction(style: .normal, title:  "Close", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-                 print("OK, marked as Closed")
-                 success(true)
-             })
-             closeAction.image = UIImage(named: "tick")
-             closeAction.backgroundColor = .purple
-     
-             return UISwipeActionsConfiguration(actions: [closeAction])
-     
-     }
-     
+    // MARK: UISwipeActionsConfiguration
      func tableView(_ tableView: UITableView,
                     trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration?
      {
-         let modifyAction = UIContextualAction(style: .normal, title:  "Update", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
-             print("Update action ...")
+         let deleteAction = UIContextualAction(style: .normal, title:  "삭제", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+             print("삭제")
              success(true)
          })
-         modifyAction.image = UIImage(named: "hammer")
-         modifyAction.backgroundColor = .blue
+        let modifyAction = UIContextualAction(style: .normal, title:  "알림해제", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+            print("알림해제")
+            success(true)
+        })
+        deleteAction.backgroundColor = .systemPink
+        modifyAction.backgroundColor = .systemGray2
      
-         return UISwipeActionsConfiguration(actions: [modifyAction])
+        return UISwipeActionsConfiguration(actions: [deleteAction, modifyAction])
      }
-
-    
-    
 }
+
 

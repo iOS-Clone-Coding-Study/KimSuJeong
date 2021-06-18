@@ -11,14 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CircleCVCell" id="gTV-IL-0wX" customClass="CircleCVCell" customModule="Instagram" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="74" height="114"/>
+            <rect key="frame" x="0.0" y="0.0" width="75" height="114"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="74" height="114"/>
+                <rect key="frame" x="0.0" y="0.0" width="75" height="114"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUL-up-OZi">
-                        <rect key="frame" x="0.0" y="0.0" width="74" height="114"/>
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="114"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYS-Bs-tio">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
@@ -87,14 +87,14 @@
                 <constraint firstAttribute="bottom" secondItem="iUL-up-OZi" secondAttribute="bottom" id="YiX-Bh-Olj"/>
                 <constraint firstAttribute="trailing" secondItem="iUL-up-OZi" secondAttribute="trailing" id="ezU-AV-phf"/>
             </constraints>
-            <size key="customSize" width="74" height="114"/>
+            <size key="customSize" width="75" height="114"/>
             <connections>
                 <outlet property="circleBackground" destination="aYS-Bs-tio" id="wsO-nR-AkS"/>
                 <outlet property="circleStoryImage" destination="Z6l-on-DDm" id="S8d-au-hYO"/>
                 <outlet property="circleStoryName" destination="QbC-uE-fRM" id="KF5-zG-sj2"/>
                 <outlet property="plusBtn" destination="bi0-WL-1wi" id="0Gv-hX-c5h"/>
             </connections>
-            <point key="canvasLocation" x="15.942028985507248" y="29.464285714285712"/>
+            <point key="canvasLocation" x="16.666666666666668" y="29.464285714285712"/>
         </collectionViewCell>
     </objects>
     <resources>
