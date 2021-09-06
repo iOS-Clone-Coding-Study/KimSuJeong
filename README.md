@@ -9,4 +9,4 @@
 | 5/27 ~ 6/01 | 추가 뷰 구성 | 애플뮤직 | <img height="20" src="AppleMusic/readme/img.png"> | [이동](./AppleMusic/readme/AppleMusic3.md) |
 | 5/27 ~ 6/10 | 중간 점검 | 인스타그램 | <img height="20" src="Instagram/readme/instagram.png"> | [이동](./Instagram/readme/Instagram1.md) |
 | 6/10 ~ 6/17 | 최종 결과 | 인스타그램 | <img height="20" src="Instagram/readme/instagram.png"> | [이동](./Instagram/readme/Instagram2.md) |
-| 6/17 ~ 6/24 | 못한 부분 완성 | 인스타그램 |  | [이동](./Instagram/readme/Instagram3.md) |
+| 6/17 ~ 6/24 | 못한 부분 완성 | 인스타그램 | <img height="20" src="Instagram/readme/instagram.png"> | [이동](./Instagram/readme/Instagram3.md) |
